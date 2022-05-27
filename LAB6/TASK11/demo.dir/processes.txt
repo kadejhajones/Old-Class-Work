@@ -1,0 +1,8 @@
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 Apr20 ?        00:00:06 /init
+root      1065     1  0 08:08 ?        00:00:00 /init
+root      1066  1065  0 08:08 ?        00:00:06 /init
+kadejhaj  1067  1066  0 08:08 pts/1    00:00:01 -bash
+kadejhaj  1761  1067  0 14:57 pts/1    00:00:00 ./syscalls
+kadejhaj  1770  1761  0 14:57 pts/1    00:00:00 sh -c ps -ef > processes.txt; cat processes.txt
+kadejhaj  1771  1770  0 14:57 pts/1    00:00:00 ps -ef
