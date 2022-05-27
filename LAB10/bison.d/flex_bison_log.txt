@@ -1,0 +1,787 @@
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: INT "-1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: FLOAT "-1.5"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: INT "+1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: FLOAT "+1.50"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: INT "10"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: FLOAT "10.15"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: FLOAT "-10.50"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "neg"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "neg"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "abs"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "abs"
+LEX: INT "-1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "abs"
+LEX: FLOAT "1.5"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "abs"
+LEX: FLOAT "-1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: FLOAT "0."
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: INT "10"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: INT "-1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: FLOAT "0.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: INT "4"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: FLOAT "4.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: INT "-1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sqrt"
+LEX: FLOAT "-1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sub"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sub"
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sub"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "sub"
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "mult"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "mult"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "3.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "mult"
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "mult"
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "3.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: FLOAT "1.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "0.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "div"
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: INT "8"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: INT "-8"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: FLOAT "8.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: INT "8"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "3.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: FLOAT "8.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: FLOAT "3.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "0"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "rem"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: FLOAT "0.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: FLOAT "2.0"
+BISON: number ::= FLOAT 
+BISON: expr ::= number 
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "exp"
+LEX: L_PAREN "("
+LEX: FUNC "log"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "1"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "2"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "3"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: L_PAREN "("
+LEX: FUNC "add"
+LEX: INT "4"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: INT "5"
+BISON: number ::= INT 
+BISON: expr ::= number 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: R_PAREN ")"
+BISON: f_expr ::= L_PAREN FUNC expr R_PAREN 
+BISON: expr ::= f_expr 
+LEX: EOL "
+"
+BISON: program ::= expr EOL 
+LEX: QUIT "quit"
+BISON: program ::= QUIT 
